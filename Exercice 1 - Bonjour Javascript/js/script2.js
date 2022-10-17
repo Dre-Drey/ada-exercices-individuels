@@ -1,6 +1,6 @@
-const name = prompt("comment tu t appele cousine");
-const age = parseInt(prompt("t'es née quand?"), 10);
+const nom = prompt("comment t'appelle-tu");
+const age = parseInt(prompt("quelle est ton année de naissance"), 10);
 
-document.body.innerHTML += "<h1> Coucou!" + name + " </h1>";
+document.body.innerHTML += "<h1> Coucou!" + nom + " </h1>";
 
 document.body.innerHTML += "<h2> tu as " + age + " ans </h2>";
