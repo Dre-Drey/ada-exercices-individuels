@@ -1,0 +1,14 @@
+h1 {
+  color: rgb(241, 164, 10);
+  font-size: 45px;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+h2 {
+  color: rgb(79, 79, 140);
+  text-decoration: underline;
+}
+p {
+  line-height: 35px;
+}
