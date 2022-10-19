@@ -1,13 +1,28 @@
 let givenNumber = parseInt(prompt("Ecris un nombre"));
-function didIWin(givenNumber) {
-  if (givenNumber < 22) {
+let chosenNumber = 22;
+
+function didIWin() {
+  if (givenNumber < chosenNumber) {
     alert("Plus grand");
-  } else if (givenNumber > 22) {
+    return false;
+  } else if (givenNumber > chosenNumber) {
     alert("Plus petit");
-  } else if (givenNumber === 22) {
+    return false;
+  } else if (givenNumber === chosenNumber) {
     alert("Bravo ! Vous avez deviné le nombre !");
+    return true;
   } else {
     alert("Oups, il y a eu un problème");
+    return false;
   }
 }
-didIWin(givenNumber);
+
+function gamePlay() {
+  didIWin();
+  if ((didIWin = true)) {
+    alert("Le jeu est fini");
+  } else {
+    parseInt(prompt("Ecris un nombre"));
+  }
+}
+gamePlay();
