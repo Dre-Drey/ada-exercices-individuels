@@ -8,7 +8,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Guess a number !</h1>
+    <h1><img src="/images/game.png" />Guess a number !</h1>
+    <h2>Règles du jeu</h2>
+    <div class="rules">
+      <p>
+        Le joueur 1 entre un nombre entre 0 et 50, qui sera le nombre à deviner.
+        Attention, tant que le nombre entré n'est pas compris entre 0 et 50,
+        l'ordinateur vous redemandera d'entrer un nombre ;).
+      </p>
+      <p>
+        Le joueur 2 doit deviner le nombre choisi par le joueur 1.<br />
+        Tant que le nombre entré n'est pas juste, le joueur 2 peut faire des
+        propositions. L'ordinateur vous dit si le nombre à deviner est plus
+        grand ou plus petit que celui proposé
+      </p>
+    </div>
+
+    <h2>Devine le nombre</h2>
+    <div class="givenNumber">
+      <input type="number" id="givenNumber" max="50" min="0" />
+      <input type="submit" />
+    </div>
+    <h2>Nombre de tentatives</h2>
   </body>
   <script src="script.js"></script>
 </html>

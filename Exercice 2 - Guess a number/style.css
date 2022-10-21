@@ -1,0 +1,30 @@
+h1 {
+  font-size: 45px;
+  text-align: center;
+  color: #7f6a93;
+  text-decoration: underline;
+  background-color: rgb(246, 242, 236);
+  padding: 20px;
+  line-height: 24px;
+}
+h1 img {
+  max-height: 35px;
+}
+
+h2 {
+  max-width: 700px;
+  color: #c97d60;
+  margin: auto;
+}
+.rules {
+  max-width: 700px;
+  justify-content: center;
+  background: #c97d60;
+  size: 16px;
+  line-height: 24px;
+  margin: auto;
+}
+.givenNumber {
+  max-width: 700px;
+  margin: auto;
+}
