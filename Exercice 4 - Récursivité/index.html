@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Exercice 4 - La récursivité</h1>
+    <div class="enonce">
+      <p>Enoncé complet et informations disponible ici.</p>
+    </div>
+    <hr />
+    <h2>Etape 1</h2>
+    <p>
+      Écrire une fonction sum1 qui prend un tableau d’entiers à additionner
+      entre eux.
+    </p>
+    <div class="code">
+      <code
+        >function sum1(array) {<br />
+        let resultat = 0;<br />
+        for (i = 0; i< array.length; i++) {<br />
+        resultat += array[i];<br />
+        } <br />return resultat;<br />
+        }</code
+      >
+    </div>
+    <button onclick="testsum1()">Tester la fonction</button>
+
+    <h2>Etape 2</h2>
+    <p>
+      Même exercice, mais avec une fonction récursive. On appellera la fonction
+      sum2.
+    </p>
+    <div class="code">
+      <code
+        >function sum2(array) {<br />
+        return sum1(array);<br />
+        }</code
+      >
+    </div>
+    <button onclick="testsum2()">Tester la fonction</button>
+    <h2>Etape 3</h2>
+    <p>
+      Écrire une fonction factorial qui prend un entier en paramètre et calcule
+      son factoriel récursivement.
+    </p>
+    <div class="code">
+      <code
+        >function getTheFactorielle(n) {<br />
+        if (n <= 0) {<br />
+        return 1;<br />
+        }<br />
+        return n * getTheFactorielle(n - 1);br> }</code
+      >
+    </div>
+    <button onclick="testGetTheFactoriellle()">Tester la fonction</button>
+    <h2>Etape 4</h2>
+    <p>
+      Écrire une fonction fibonacci qui prend un entier x en paramètre et résoud
+      la suite de Fibonacci.
+    </p>
+    <div class="code">
+      <code
+        >function fibonnacci(x) {<br />
+        if (x === 1) {<br />
+        return 0;<br />
+        } else if (x === 2) {<br />
+        return 1;<br />
+        }<br />
+        return fibonnacci(x - 1) + fibonnacci(x - 2);<br />
+        }</code
+      >
+    </div>
+    <button onclick="testFibonnaci()">Tester la fonction</button>
+  </body>
+  <script src="script.js"></script>
+</html>
